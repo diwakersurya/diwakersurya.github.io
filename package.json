@@ -1,47 +1,41 @@
 {
-  "name": "react-starter",
+  "name": "diwakersurya.github.io",
   "version": "1.0.0",
-  "description": "starter project for react",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --hot --inline",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-prod": "webpack -p  --define process.env.NODE_ENV='\"production\"' --progress --colors --config ./webpack.production.config.js"
-  },
-  "keywords": [],
-  "author": "Diwaker Singh",
-  "license": "ISC",
+  "description": "",
+  "main": "webpack.config.js",
   "dependencies": {
-    "babel-preset-stage-1": "^6.1.18",
-    "eslint-plugin-react": "^4.3.0",
-    "lodash": "^3.10.1",
+    "css-loader": "^0.23.1",
     "material-design-lite": "^1.2.1",
-    "react": "^0.14.8",
-    "react-addons-update": "^0.14.7",
-    "react-awesome-modal": "^0.2.8",
-    "react-dom": "^0.14.8",
-    "react-redux": "^4.4.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-mdl": "^1.5.2",
     "react-router": "^4.0.0-alpha.5",
-    "react-router-redux": "^4.0.2",
-    "react-tap-event-plugin": "^0.2.2",
-    "redux": "^3.4.0",
-    "redux-promise": "^0.5.3"
+    "style-loader": "^0.13.1"
   },
   "devDependencies": {
-    "babel-core": "^6.7.6",
-    "babel-eslint": "^6.0.2",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "babel-preset-react-hmre": "^1.1.1",
-    "css-loader": "^0.23.1",
-    "eslint": "^3.9.1",
-    "eslint-plugin-flow-vars": "^0.3.0",
-    "eslint-plugin-react": "^4.3.0",
-    "jsdom": "^8.1.0",
-    "react-addons-test-utils": "^0.14.7",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.12.15",
-    "webpack-dev-server": "^1.14.0"
-  }
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+		"build-prod":"webpack -p --progress --color --config ./webpack.production.config.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diwakersurya/diwakersurya.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diwakersurya/diwakersurya.github.io/issues"
+  },
+  "homepage": "https://github.com/diwakersurya/diwakersurya.github.io#readme"
 }

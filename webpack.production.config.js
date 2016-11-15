@@ -1,3 +1,4 @@
+var webpack = require("webpack");
 module.exports = {
 	entry: ['./src/index.js'],
 	output: {
@@ -19,6 +20,12 @@ module.exports = {
 			}
 		]
 	},
+	plugins: [//adding global configuration variables
+		new webpack.DefinePlugin({
+			'process.env': {
+				'NODE_ENV': JSON.stringify('production')
+			}
+		})],
 	resolve: {
 		extensions: ['', '.js', '.jsx']
 	},
