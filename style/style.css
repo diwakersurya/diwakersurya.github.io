@@ -1,0 +1,29 @@
+.modal-anim-enter {
+    opacity: 0.00;
+    transform: scale(0.7);
+    transition: all 0.2s;
+}
+.modal-anim-appear {
+  opacity: 0.01;
+  transform: scale(0.8);
+}
+
+.modal-anim-appear.modal-anim-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+}
+.modal-anim-enter.modal-anim-enter-active {
+    opacity: 1;
+    transform: scale(1);
+}
+.modal-anim-leave {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+.modal-anim-leave.modal-anim-leave-active {
+    opacity: 0.00;
+    transform: scale(0.7);
+}
