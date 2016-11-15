@@ -2,14 +2,14 @@ import Component1 from '../components/Component1';
 import Component10 from '../components/Component10';
 import Feature from '../containers/Feature';
 const routes = {
-	pattern: '/app',
+	pattern: '/',
 	component: Feature,
 	subRoutes: [
 		{
-			pattern: '/app/Component1',
+			pattern: '/Component1',
 			component: Component1
 		}, {
-			pattern: '/app/Component10',
+			pattern: '/Component10',
 			component: Component10
 		}
 	]
