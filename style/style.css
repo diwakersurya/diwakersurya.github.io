@@ -1,4 +1,4 @@
-.modal-anim-enter {
+/*.modal-anim-enter {
     opacity: 0.00;
     transform: scale(0.7);
     transition: all 0.2s;
@@ -26,4 +26,26 @@
 .modal-anim-leave.modal-anim-leave-active {
     opacity: 0.00;
     transform: scale(0.7);
+}*/
+
+.container {
+    display: flex;
+    /* or inline-flex */
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+    display: flex;
+    align-content: stretch width: 100%;
+    height: 200px;
+}
+
+.item {
+    flex-grow: 1;
+    /* default 0 */
+}
+
+.center-content {
+    margin: 0 auto;
 }
