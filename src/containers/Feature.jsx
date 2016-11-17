@@ -3,11 +3,12 @@ import Router from 'react-router/BrowserRouter'
 import {MatchWithSubRoutes} from '../utils';
 import ProfileImage from "../components/ProfileImageComponent"
 import Data from "../components/DataComponent";
+import ShortDetail from "../components/ShortDetailComponent";
 var widthMatchParent = {
 	width: "100%"
 }
 var website = {
-	backgroundColor: "#cecece"
+	backgroundColor: "#EEEEEE"
 }
 var leftSection = {
 	backgroundColor: "#3AA5DD"
@@ -17,7 +18,8 @@ const Feature = () => (
 		<div className="mdl-grid" style={website}>
 			<div className="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--4-col-phone" style={leftSection}>
 				<div >
-					{/* <ProfileImage height="200px" width="100%" imageUrl="../../images/photo.jpg"/> */}
+					<ProfileImage height="200px" width="100%" imageUrl="../../images/photo.jpg" name="Diwaker Singh"/>
+					<ShortDetail height="200px" width="100%" imageUrl="../../images/photo.jpg" name="Diwaker Singh"/>
 				</div>
 			</div>
 			<div className="mdl-cell mdl-cell--8-col mdl-cell--5-col-tablet mdl-cell--4-col-phone">
