@@ -19,13 +19,13 @@ module.exports = {
 				loader: "style-loader!css-loader"
 			}, {
 				test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-				loader: "url?limit=10000&mimetype=application/font-woff"
+				loader: "url?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]"
 			}, {
 				test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-				loader: "url?limit=10000&mimetype=application/font-woff"
+				loader: "url?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]"
 			}, {
 				test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-				loader: "url?limit=10000&mimetype=application/octet-stream"
+				loader: "url?limit=10000&mimetype=application/octet-stream&name=fonts/[name].[ext]"
 			}, {
 				test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
 				loader: "file"
