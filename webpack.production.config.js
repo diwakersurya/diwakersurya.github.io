@@ -1,11 +1,15 @@
 var webpack = require("webpack");
 module.exports = {
-	entry: ['./src/index.js'],
+	entry: {
+		app: "./src/index.js",
+		vendor: ["react"]
+	},
 	output: {
 		path: __dirname + "/js/",
 		publicPath: "/js/",
 		filename: 'bundle.js'
 	},
+	plugins: [new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")],
 	module: {
 		loaders: [
 			{
