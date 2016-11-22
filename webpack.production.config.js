@@ -9,7 +9,6 @@ module.exports = {
 		publicPath: "/js/",
 		filename: 'bundle.js'
 	},
-	plugins: [new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")],
 	module: {
 		loaders: [
 			{
@@ -40,12 +39,14 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [//adding global configuration variables
+	plugins: [ //adding global configuration variables
 		new webpack.DefinePlugin({
 			'process.env': {
 				'NODE_ENV': JSON.stringify('production')
 			}
-		})],
+		}),
+		new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
+	],
 	resolve: {
 		extensions: ['', '.js', '.jsx']
 	},
