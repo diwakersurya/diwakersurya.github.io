@@ -17,11 +17,11 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: 'babel',
 				query: {
-					presets: ['react', 'es2015', 'react-hmre']
+					presets: ['react', 'es2015','stage-3', 'react-hmre']
 				}
 			}, {
 				test: /\.css$/,
-				loader: "style-loader!css-loader"
+				loaders: ["style", "css?modules&localIdentName=[local]---[hash:base64:5]", "cssnext"]
 			}, {
 				test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
 				loader: "url?limit=10000&mimetype=application/font-woff"

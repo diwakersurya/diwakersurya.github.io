@@ -3,7 +3,8 @@ var style = {
 	backgroundColor: "#F5D0B5"
 }
 var styleProfileParent = {
-	width: "100%"
+	width: "100%",
+	marginBottom:"5px"
 }
 var styleProfileImage = {
 	border: "5px solid white",
@@ -17,7 +18,6 @@ const ProfileImage = ({imageUrl, className, height, name}) => (
 		<div className="mdl-card__supporting-text">
 			<h2 className="mdl-card__title-text">{name}</h2>
 		</div>
-		<div className="mdl-card__actions mdl-card--border"></div>
 	</div>
 );
 export default ProfileImage;;

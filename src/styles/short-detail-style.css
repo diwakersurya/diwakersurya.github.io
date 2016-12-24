@@ -1,0 +1,31 @@
+.profile-section {
+    width: 100%;
+    height: 400px;
+}
+
+.width-match-parent {
+    width: 100%;
+}
+
+.details-parent {
+    width: 100%;
+    min-height: 50px;
+}
+
+.details-inner-parent {
+    flex: 100;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    font-size: 2em;
+}
+
+.left {
+    flex: 15;
+}
+
+.right {
+    flex: 85;
+}

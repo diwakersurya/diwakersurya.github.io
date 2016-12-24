@@ -1,0 +1,13 @@
+.experience-list-parent {
+    margin-top: 5px;
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.border {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    height: 1px;
+    margin-top: 12px;
+    /*padding-top: 4px;
+    padding-bottom: 4px;*/
+}
