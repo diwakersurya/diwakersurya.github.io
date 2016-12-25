@@ -1,0 +1,1 @@
+*material design lite and font awesome libraries are present in style folder as well as node modules because of problem in using external css libraries with css modules. Js file for material design lite is still being used from node modules folder.
