@@ -1,9 +1,10 @@
 import React from 'react';
 import Router from 'react-router/BrowserRouter'
-//require css so that it can be transferred on the page
-// imports for material design css
- import {} from "material-design-lite/material.min.js"
- import {} from "font-awesome/css/font-awesome.min.css";
+
+//css files have been imported directly on page using script tags since css modules dont play
+//well with external css libraries. hence both node_modules material design lite and downloaded
+//mdl folder is there.
+  import {} from "material-design-lite/material.min.js"
  // imports for material design css end
 //because github does not support url from node modules
 import {MatchWithSubRoutes} from '../utils';
