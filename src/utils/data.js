@@ -42,7 +42,7 @@ const resumeData = {
 			city:"Bengaluru",
 			state:"Karnataka",
 			country:"India",
-			description:"Fullstack Web development using nodejs and and frameworks like express, react, redux and pure javascript."
+			description:"Fullstack Web development using nodejs and frameworks like express, react, redux and pure javascript."
 		},
 		{
 			designation:"Software Engineer",
@@ -63,7 +63,55 @@ const resumeData = {
 			description:"Worked mainly on development and Testing of Projects involving  asp.net, nodejs, javascript and MS SQL Server Database.Worked on a few addon Android applications."
 		}
 
-	]
+	],
+	technical:{
+		languages:[
+			{
+			name:"javascript",
+			value:70
+			},
+			{
+				name:"C#",
+				value:15
+			},
+			{
+				name:"golang",
+				value:10
+			},
+			{
+				name:"C/C++",
+				value:10
+			},
+		],
+		databases:[
+			{
+			name:"MySql",
+			value:40
+			},
+			{
+				name:"Sql Server",
+				value:40
+			},
+			{
+				name:"Mongo DB",
+				value:20
+			}
+		],
+		frameworks:[
+			{
+			name:"Expressjs",
+			value:80
+			},
+			{
+				name:"Gin-Gonic",
+				value:10
+			},
+			{
+				name:"ASP.Net",
+				value:10
+			}
+		]
+	}
 
 }
 export default resumeData;

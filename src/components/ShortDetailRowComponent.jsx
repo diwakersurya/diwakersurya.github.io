@@ -1,7 +1,7 @@
 import React from 'react';
-import css from "../styles/short-detail-style.css";
+import css from "../styles/short-detail-row-style.css";
 const ShortDetailRow = ({faIcon,shortDescription}) => (
-	<div className={"mdl-card mdl-shadow--2dp " + css["details-parent"]} >
+	<div>
 		<div className={"mdl-card__supporting-text "+ css["details-inner-parent"]}>
 			<div className={css.left}>
 				<i className={faIcon+" "+css.icon} aria-hidden="true" ></i>
@@ -10,5 +10,6 @@ const ShortDetailRow = ({faIcon,shortDescription}) => (
 		</div>
 		<div className="mdl-card__actions mdl-card--border"></div>
 	</div>
+
 );
 export default ShortDetailRow;

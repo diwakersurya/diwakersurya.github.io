@@ -7,6 +7,7 @@
     "css-loader": "^0.23.1",
     "material-design-lite": "^1.2.1",
     "react": "^15.3.2",
+    "react-d3-basic": "^1.6.11",
     "react-dom": "^15.3.2",
     "react-mdl": "^1.5.2",
     "react-router": "^4.0.0-alpha.5",
