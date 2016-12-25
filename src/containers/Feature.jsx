@@ -2,7 +2,6 @@ import React from 'react';
 import Router from 'react-router/BrowserRouter'
 //require css so that it can be transferred on the page
 // imports for material design css
- import {} from "material-design-lite/material.min.css"
  import {} from "material-design-lite/material.min.js"
  import {} from "font-awesome/css/font-awesome.min.css";
  // imports for material design css end
