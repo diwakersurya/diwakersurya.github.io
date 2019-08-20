@@ -41,3 +41,6 @@ build.out
 
 #bower dependencies
 public/lib
+
+
+.DS_Store

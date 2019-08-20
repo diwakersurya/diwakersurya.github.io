@@ -1,45 +1,47 @@
 {
-  "name": "diwakersurya.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "name": "diwakersurya.xyz",
+  "private": true,
+  "description": "My profile with my experience.",
+  "version": "0.1.0",
+  "author": "Diwaker Singh <diwaker.surya@gmail.com>",
   "dependencies": {
-    "css-loader": "^0.23.1",
-    "material-design-lite": "^1.2.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-mdl": "^1.5.2",
-    "react-router": "^4.0.0-alpha.5",
-    "style-loader": "^0.13.1"
+    "d3": "^5.9.7",
+    "gatsby": "^2.13.64",
+    "gatsby-image": "^2.2.8",
+    "gatsby-plugin-manifest": "^2.2.5",
+    "gatsby-plugin-offline": "^2.2.6",
+    "gatsby-plugin-react-helmet": "^3.1.3",
+    "gatsby-plugin-sharp": "^2.2.11",
+    "gatsby-source-contentful": "^2.1.20",
+    "gatsby-source-filesystem": "^2.1.9",
+    "gatsby-transformer-sharp": "^2.2.6",
+    "material-design-lite": "^1.3.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.18.2",
-    "babel-loader": "^6.2.7",
-    "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-react-hmre": "^1.1.1",
-    "cssnext-loader": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "react-styleable": "^2.2.4",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "prettier": "^1.18.2"
   },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
-    "build-prod": "webpack -p --progress --color --config ./webpack.production.config.js"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diwakersurya/diwakersurya.github.io.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/diwakersurya/diwakersurya.github.io/issues"
-  },
-  "homepage": "https://github.com/diwakersurya/diwakersurya.github.io#readme"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
 }
