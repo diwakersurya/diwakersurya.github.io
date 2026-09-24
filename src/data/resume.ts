@@ -11,13 +11,23 @@ export const profile = {
     'I design the frontend architecture that product teams build on: design systems, backend-for-frontend layers, build tooling and the drag-and-drop editors people use every day. 13+ years across recruitment automation, AdTech, gaming, IT services and manufacturing.',
 };
 
+// Each kind gets its own shape and colour in the work list (see WorkMarkers).
+export const kinds = {
+  led: 'Led',
+  architected: 'Architected',
+  built: 'Built',
+  modernised: 'Modernised',
+  recognised: 'Recognised',
+} as const;
+export type Kind = keyof typeof kinds;
+
 export type Job = {
   company: string;
   title: string;
   start: string;
   end: string;
   place: string;
-  highlights: string[];
+  highlights: { kind: Kind; text: string }[];
   projects: string[];
 };
 
@@ -29,12 +39,12 @@ export const work: Job[] = [
     end: 'Now',
     place: 'Bangalore',
     highlights: [
-      'Led frontend for Sense IQ, the orchestration UI for AI recruitment agents.',
-      'Architected the rebuilt core automation app on React and TypeScript.',
-      'Designed Orbit, a Node.js backend-for-frontend that gives the UI one clean contract with many services.',
-      'Built J2 Workflow Builder, the drag-and-drop automation engine used across the product.',
-      'Moved the codebase from JavaScript to TypeScript and from Webpack to Rspack, cutting build times sharply.',
-      'Named Star Engineer of the Year 2024.',
+      { kind: 'led', text: 'Led frontend for Sense IQ, the orchestration UI for AI recruitment agents.' },
+      { kind: 'architected', text: 'Architected the rebuilt core automation app on React and TypeScript.' },
+      { kind: 'architected', text: 'Designed Orbit, a Node.js backend-for-frontend that gives the UI one clean contract with many services.' },
+      { kind: 'built', text: 'Built J2 Workflow Builder, the drag-and-drop automation engine used across the product.' },
+      { kind: 'modernised', text: 'Moved the codebase from JavaScript to TypeScript and from Webpack to Rspack, cutting build times sharply.' },
+      { kind: 'recognised', text: 'Named Star Engineer of the Year 2024.' },
     ],
     projects: ['Sense IQ', 'J2 Workflow Builder', 'Orbit BFF', 'Audience List 2.0'],
   },
@@ -45,9 +55,9 @@ export const work: Job[] = [
     end: '2021',
     place: 'Bangalore',
     highlights: [
-      'Built ireact-components, a design system adopted by several internal product teams.',
-      'Shipped React apps over REST and Thrift services unified behind GraphQL.',
-      'Delivered RSO Infinity and iDSP, AdTech platforms for campaign analytics and customer data.',
+      { kind: 'built', text: 'Built ireact-components, a design system adopted by several internal product teams.' },
+      { kind: 'architected', text: 'Shipped React apps over REST and Thrift services unified behind GraphQL.' },
+      { kind: 'built', text: 'Delivered RSO Infinity and iDSP, AdTech platforms for campaign analytics and customer data.' },
     ],
     projects: ['iReact Design System', 'iDSP', 'RSO Infinity'],
   },
@@ -58,8 +68,8 @@ export const work: Job[] = [
     end: '2017',
     place: 'Bangalore',
     highlights: [
-      'Split the AddCash payments flow into a standalone React app and turned legacy widgets into modular plugins.',
-      'Delivered Angular and React admin dashboards, including config management.',
+      { kind: 'modernised', text: 'Split the AddCash payments flow into a standalone React app and turned legacy widgets into modular plugins.' },
+      { kind: 'built', text: 'Delivered Angular and React admin dashboards, including config management.' },
     ],
     projects: ['AddCash', 'Config Dashboard'],
   },
@@ -69,7 +79,7 @@ export const work: Job[] = [
     start: '2015',
     end: '2015',
     place: 'Bangalore',
-    highlights: ['Built an Express.js analytics and reporting portal on top of enterprise backends.'],
+    highlights: [{ kind: 'built', text: 'Built an Express.js analytics and reporting portal on top of enterprise backends.' }],
     projects: ['Scheduled Reporting'],
   },
   {
@@ -78,7 +88,7 @@ export const work: Job[] = [
     start: '2012',
     end: '2015',
     place: 'Noida',
-    highlights: ['Built .NET production-line tracking apps, with WinForms and Crystal Reports UIs, including JCB Pick2Light.'],
+    highlights: [{ kind: 'built', text: 'Built .NET production-line tracking apps, with WinForms and Crystal Reports UIs, including JCB Pick2Light.' }],
     projects: ['Pick2Light'],
   },
 ];

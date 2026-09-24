@@ -87,50 +87,13 @@
   max-width: var(--measure);
 }
 
-.timeline {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-.job {
-  display: grid;
-  grid-template-columns: 8rem 1fr;
-  gap: var(--space-4);
-  padding-bottom: var(--space-5);
-  scroll-margin-top: var(--space-5);
-}
 
-.years {
-  margin: 0;
-  font: 500 1rem/1.9 var(--display);
-  color: var(--slate);
-  font-variant-numeric: tabular-nums;
-}
 
-.company {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
 
-.title {
-  margin: var(--space-1) 0 var(--space-3);
-  color: var(--slate);
-}
 
-.highlights {
-  margin: 0;
-  padding-left: 1.1em;
-  max-width: var(--measure);
-}
 
-.highlights li + li {
-  margin-top: var(--space-2);
-}
 
-.highlights li::marker {
-  color: var(--cobalt);
-}
 
 .skills {
   margin: 0;
@@ -194,8 +157,4 @@
     margin-bottom: var(--space-4);
   }
 
-  .job {
-    grid-template-columns: 1fr;
-    gap: var(--space-1);
-  }
 }

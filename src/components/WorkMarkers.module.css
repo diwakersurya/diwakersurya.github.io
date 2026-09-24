@@ -1,0 +1,14 @@
+.marker {
+  display: inline-block;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-top: -0.2rem;
+  flex: none;
+}
+
+.canvas {
+  position: fixed !important;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}

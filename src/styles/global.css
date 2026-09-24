@@ -7,6 +7,12 @@
   --cobalt: #2b4eff;
   --amber: #f0a202;
 
+  --k-led: #2b4eff;
+  --k-architected: #0b9e8a;
+  --k-built: #e0457b;
+  --k-modernised: #f0a202;
+  --k-recognised: #7a5af8;
+
   --display: 'Bricolage Grotesque', system-ui, sans-serif;
   --body: 'Newsreader', Georgia, serif;
 
@@ -32,6 +38,11 @@
     --line: #2a3658;
     --cobalt: #8199ff;
     --amber: #ffba2e;
+    --k-led: #8199ff;
+    --k-architected: #3dd6c0;
+    --k-built: #ff7aa6;
+    --k-modernised: #ffba2e;
+    --k-recognised: #ab94ff;
     color-scheme: dark;
   }
 }

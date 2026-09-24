@@ -1,9 +1,11 @@
 import { lazy, Suspense } from 'react';
-import { education, profile, recognition, skills, work } from './data/resume';
+import { education, profile, recognition, skills } from './data/resume';
 import Projects from './components/Projects';
+import Work from './components/Work';
 import styles from './App.module.css';
 
 const Scene = lazy(() => import('./components/Scene'));
+const MarkerCanvas = lazy(() => import('./components/WorkMarkers'));
 
 export default function App() {
   return (
@@ -36,26 +38,7 @@ export default function App() {
       <main className={styles.main}>
         <section className={styles.section} aria-labelledby="work">
           <h2 id="work" className={styles.heading}>Work</h2>
-          <ol className={styles.timeline}>
-            {work.map((job, i) => (
-              <li key={job.company} id={`job-${i}`} className={styles.job}>
-                <p className={styles.years}>
-                  {job.start === job.end ? job.start : `${job.start} to ${job.end}`}
-                </p>
-                <div>
-                  <h3 className={styles.company}>{job.company}</h3>
-                  <p className={styles.title}>
-                    {job.title}, {job.place}
-                  </p>
-                  <ul className={styles.highlights}>
-                    {job.highlights.map((h) => (
-                      <li key={h}>{h}</li>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-          </ol>
+          <Work />
         </section>
 
         <section className={styles.section} aria-labelledby="skills">
@@ -92,6 +75,10 @@ export default function App() {
           </ul>
         </section>
       </main>
+
+      <Suspense fallback={null}>
+        <MarkerCanvas />
+      </Suspense>
 
       <footer className={styles.footer}>
         <p>
