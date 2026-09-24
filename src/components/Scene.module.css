@@ -1,0 +1,38 @@
+.canvas {
+  touch-action: pan-y;
+}
+
+.wrap,
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.label,
+.labelActive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  font: 500 0.8rem/1 var(--display);
+  color: var(--slate);
+  padding: var(--space-1) var(--space-2);
+}
+
+.labelActive {
+  color: var(--fog);
+  background: var(--ink);
+  border-radius: 999px;
+}

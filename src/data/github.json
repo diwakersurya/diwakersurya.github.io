@@ -1,0 +1,83 @@
+{
+  "fetchedAt": "2026-09-24T13:15:07.344Z",
+  "profile": {
+    "login": "diwakersurya",
+    "avatar": "https://avatars.githubusercontent.com/u/7386665?v=4",
+    "publicRepos": 65,
+    "since": "2014-04-23T16:40:38Z"
+  },
+  "repos": [
+    {
+      "name": "magic-move-code",
+      "url": "https://github.com/diwakersurya/magic-move-code",
+      "homepage": "http://mmc.thetechlead.in",
+      "description": "An attempt to visualise the comparison of 2 code fragments",
+      "language": "TypeScript",
+      "pushedAt": "2026-09-23T13:15:15Z"
+    },
+    {
+      "name": "agent-taste",
+      "url": "https://github.com/diwakersurya/agent-taste",
+      "homepage": null,
+      "description": "a global store for managing the user taste based on conversation with agents",
+      "language": "TypeScript",
+      "pushedAt": "2026-09-23T08:12:51Z"
+    },
+    {
+      "name": "mac-dnd-categoriser",
+      "url": "https://github.com/diwakersurya/mac-dnd-categoriser",
+      "homepage": null,
+      "description": "a systemone based categoriser to organize files.",
+      "language": "Swift",
+      "pushedAt": "2026-09-23T11:18:09Z"
+    },
+    {
+      "name": "svelte-accordion",
+      "url": "https://github.com/diwakersurya/svelte-accordion",
+      "homepage": "https://svelte-accordion.diwakersurya.xyz",
+      "description": "A Svelete Accordion Component",
+      "language": "HTML",
+      "pushedAt": "2019-11-06T11:00:04Z"
+    },
+    {
+      "name": "image-server-canvas",
+      "url": "https://github.com/diwakersurya/image-server-canvas",
+      "homepage": null,
+      "description": "dynamic image generation with a message using canvas api on cloudflare workers",
+      "language": "TypeScript",
+      "pushedAt": "2026-09-24T12:25:21Z"
+    },
+    {
+      "name": "auto-login-extension",
+      "url": "https://github.com/diwakersurya/auto-login-extension",
+      "homepage": "https://diwakersurya.github.io/auto-login-extension/",
+      "description": "Chrome extension that fills and submits the login form on the dev/test sites you configure.",
+      "language": "JavaScript",
+      "pushedAt": "2026-09-24T12:12:13Z"
+    },
+    {
+      "name": "sandbox",
+      "url": "https://github.com/diwakersurya/sandbox",
+      "homepage": "https://sandbox.thetechlead.in",
+      "description": "code sandbox for react",
+      "language": "JavaScript",
+      "pushedAt": "2022-12-10T02:05:01Z"
+    },
+    {
+      "name": "click-to-copy",
+      "url": "https://github.com/diwakersurya/click-to-copy",
+      "homepage": null,
+      "description": "A library for component wrapping labels and h1 so that we can click to copy the their text. https://www.npmjs.com/package/click-to-copy",
+      "language": "JavaScript",
+      "pushedAt": "2020-05-27T18:46:44Z"
+    },
+    {
+      "name": "chrome-gist-extension",
+      "url": "https://github.com/diwakersurya/chrome-gist-extension",
+      "homepage": null,
+      "description": "This is a chrome extension which allows to save the selected content as gist on Github. You can directly select text and create a github gist out of it by just a right click.",
+      "language": "CSS",
+      "pushedAt": "2016-12-02T17:28:43Z"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+:root {
+  --fog: #e6e9ef;
+  --paper: #f3f5f8;
+  --ink: #16203a;
+  --slate: #56607a;
+  --line: #c6cddb;
+  --cobalt: #2b4eff;
+  --amber: #f0a202;
+
+  --display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --body: 'Newsreader', Georgia, serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --space-7: 7rem;
+  --gutter: clamp(1rem, 5vw, 4rem);
+  --measure: 38rem;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fog: #0f1830;
+    --paper: #152040;
+    --ink: #e6e9ef;
+    --slate: #9aa4bd;
+    --line: #2a3658;
+    --cobalt: #8199ff;
+    --amber: #ffba2e;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fog);
+  color: var(--ink);
+  font: 400 1.1875rem/1.6 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  line-height: 1.05;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--cobalt);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--cobalt);
+}
+
+:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::view-transition-group(*) {
+  animation-duration: 420ms;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
